@@ -1,0 +1,91 @@
+
+table {
+    font-family: verdana;
+    text-align: center;
+    width: 100%;
+  }
+  
+  th.pos {
+    text-align: right;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  
+  th {
+    background-color: bisque;
+    color: black;
+  }
+  
+  td {
+    background-color: rgb(229, 229, 229);
+  }
+  
+  a {
+    background-color: rgb(229, 229, 229);
+    text-decoration: none;
+    color: black;
+  }
+  
+  input {
+    background-color: bisque;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-color: black;
+    border-width: 2px;
+    border-collapse: separate;
+  }
+  
+  button {
+    background-color: bisque;
+    font-size: 15px;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    border-color: black;
+    border-width: 2px;
+    border-collapse: separate;
+  }
+  
+  
+  /* Navigation link styles */
+.topnav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  float: left;
+  display: block;
+  background-color: rgb(0, 0, 0);
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}

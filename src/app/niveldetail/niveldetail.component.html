@@ -1,0 +1,41 @@
+<div *ngIf="nivel != undefined">
+    <h2>{{ nivel._tipoNivel }}</h2>
+  
+    <div><span> ID:</span>{{ nivel.id }}</div>
+    <div><span> Tipo: </span> {{ nivel.tipoNivel }}</div>
+    <div>
+      <span> Aficionado: </span>
+      <input type="checkbox" value="{{ nivel.aficionado }}" />
+    </div>
+    <div><span> Edad Límite: </span> {{ nivel.limiteEdad }}</div>
+    <div><span> Inscripción: </span> {{ nivel.inscripcion }}</div>
+    <button (click)="goBack()">Atrás</button>
+  </div>
+  
+  <p>¿Desea editar alguno de los siguientes datos?</p>
+  
+  <div *ngIf="nivel != undefined">
+    <h2>Cambios en {{ nivel.tipoNivel }}</h2>
+  
+    <div>
+      <label>
+        Aficionado:
+        <input type="checkbox" value="{{ nivel.aficionado }}" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Edad Límite:
+        <input [(ngModel)]="nivel._limiteEdad" placeholder="limiteEdad" />
+      </label>
+    </div>
+    <div>
+      <label>
+        Inscripción:
+        <input [(ngModel)]="nivel._inscripcion" placeholder="inscripcion" />
+      </label>
+    </div>
+    <button (click)="goBack()">Atrás</button>
+    <button (click)="save()">Guardar</button>
+  </div>
+  

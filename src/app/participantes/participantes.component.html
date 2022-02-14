@@ -1,0 +1,30 @@
+
+<br><br>
+<h2>Participantes</h2>
+
+
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>NOMBRE</th>
+		<th>EDAD</th>
+		<th>NACIONALIDAD</th>
+		<th>NIVEL</th>
+    	<th>NOM.CABALLO</th>
+    	<th>RAZA</th>
+    	<th>ED.CABALLO</th>
+    	<th>CAB.ESTABULADO</th>
+	</tr>
+	<tr *ngFor="let participante of participantes">
+		<td>{{participante._id}}</td>
+		<td>{{participante._nombre}}</td>
+		<td>{{participante._edad}}</td>
+		<td>{{participante._nacionalidad}}</td>
+		<td>{{participante._nivel}}</td>
+    <td>{{participante._nomCaballo}}</td>
+    <td>{{participante._raza}}</td>
+    <td>{{participante._edadCaballo}}</td>
+    <td>{{participante._cabEstabulado}}</td>
+	</tr>
+</table>

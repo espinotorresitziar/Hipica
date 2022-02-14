@@ -1,0 +1,22 @@
+<body>
+    <form action="" class="formulario">
+        <h2 class="formulario__titulo"> Nuevo Nivel </h2>
+        <input #id type="number" class="formulario__input">
+        <label for="" class="formulario__label">ID</label>
+        <input #tipo type="text" class="formulario__input">
+        <label for="" class="formulario__label">Tipo</label>
+        ¿Para aficionados?<br><br><br>
+        <input #aficionado type="checkbox" class="formulario__input">
+        <label for="" class="formulario__label">Aficionado</label>
+        <input #limedad type="number" class="formulario__input">
+        <label for="" class="formulario__label">Edad Límite</label>
+        <input #inscripcion type="text" class="formulario__input">
+        <label for="" class="formulario__label">Inscripción</label>
+        <button type="submit" class="formulario__submit" 
+        (click)="addNivel(id.value, tipo.value, aficionado.value, limedad.value, inscripcion.value); id.value=''; tipo.value=''; aficionado.value=''; limedad.value=''; inscripcion.value=''"
+  >
+    Añadir
+  </button>
+    </form>
+    <script src="form.js"></script>
+</body>

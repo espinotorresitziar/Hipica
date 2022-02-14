@@ -1,0 +1,20 @@
+<br><br>
+
+<h2>Niveles</h2>
+
+<table>
+	<tr>
+		<th>ID</th>
+		<th>TIPO</th>
+		<th>AFICIONADO</th>
+		<th>EDAD LIMITE</th>
+		<th>INSCRIPCION</th>
+	</tr>
+	<tr *ngFor="let nivel of niveles">
+		<td>{{nivel._id}}</td>
+		<td><a routerLink="/niveles/{{nivel._tipoNivel}}">{{nivel._tipoNivel}}</a></td>
+		<td>{{nivel._aficionado}}</td>
+		<td>{{nivel._limiteEdad}}</td>
+		<td>{{nivel._inscripcion}}</td>
+	</tr>
+</table>

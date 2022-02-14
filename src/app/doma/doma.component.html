@@ -1,0 +1,53 @@
+<body>
+    <form action="" class="formulario">
+        <h2 class="formulario__titulo"> Nuevo Participante Doma </h2>
+        <input #id type="number" class="formulario__input">
+        <label for="" class="formulario__label">ID</label>
+        <input #nombre type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nombre</label>
+        <input #edad type="number" class="formulario__input">
+        <label for="" class="formulario__label">Edad</label>
+        <input #nacion type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nacionalidad</label>
+        <input #nivel type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nivel</label>
+        <input #nomCab type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nom.Caballo</label>
+        <input #raza type="text" class="formulario__input">
+        <label for="" class="formulario__label">Raza</label>
+        <input #edCab type="text" class="formulario__input">
+        <label for="" class="formulario__label">Ed.Caballo</label>
+        <input #cabEst type="checkbox" class="formulario__input">
+        <label for="" class="formulario__label">Estabulado</label>
+        Puntuaciones:
+        <br><br>
+        <input #parada type="number" class="formulario__input">
+        <label for="" class="formulario__label">Parada</label>
+        <input #paso type="number" class="formulario__input">
+        <label for="" class="formulario__label">Paso</label>
+        <input #trote type="number" class="formulario__input">
+        <label for="" class="formulario__label">trote</label>
+        <input #galope type="number" class="formulario__input">
+        <label for="" class="formulario__label">Galope</label>
+        <input #pasoAtras type="number" class="formulario__input">
+        <label for="" class="formulario__label">P.Atrás</label>
+        <input #trans type="number" class="formulario__input">
+        <label for="" class="formulario__label">Transiciones</label>
+        <input #camDire type="number" class="formulario__input">
+        <label for="" class="formulario__label">Dirección</label>
+        <input #figuras type="number" class="formulario__input">
+        <label for="" class="formulario__label">Figuras</label>
+        <input #movLat type="number" class="formulario__input">
+        <label for="" class="formulario__label">Mov.Lateral</label>
+        <input #piruetas type="number" class="formulario__input">
+        <label for="" class="formulario__label">Piruetas</label>
+        <button class="formulario__submit" 
+    (click)="addParticipante(id.value, nombre.value, edad.value, nacion.value, nivel.value, nomCab.value, raza.value, edCab.value, cabEst.value,
+    parada.value, paso.value, trote.value, galope.value, pasoAtras.value, trans.value, camDire.value, figuras.value, movLat.value, piruetas.value); id.value=''; nombre.value=''; edad.value=''; nacion.value=''; nivel.value=''; nomCab.value='';
+    raza.value=''; edCab.value=''; cabEst.value=''; parada.value=''; paso.value=''; trote.value=''; galope.value=''; pasoAtras.value='';
+    camDire.value=''; figuras.value=''; movLat.value=''; piruetas.value=''"
+  >
+        Añadir</button>
+        <script src="form.js"></script>
+    </form>
+</body>

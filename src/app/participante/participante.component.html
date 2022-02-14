@@ -1,0 +1,29 @@
+<br><br><br><br>
+
+<body>
+    <form action="" class="formulario">
+        <h2 class="formulario__titulo"> Nuevo Participante </h2>
+        <input #id type="number" class="formulario__input">
+        <label for="" class="formulario__label">ID</label>
+        <input #nombre type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nombre</label>
+        <input #edad type="number" class="formulario__input">
+        <label for="" class="formulario__label">Edad</label>
+        <input #nacion type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nacionalidad</label>
+        <input #nivel type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nivel</label>
+        <input #nomCab type="text" class="formulario__input">
+        <label for="" class="formulario__label">Nom.Caballo</label>
+        <input #raza type="text" class="formulario__input">
+        <label for="" class="formulario__label">Raza</label>
+        <input #edCab type="text" class="formulario__input">
+        <label for="" class="formulario__label">Ed.Caballo</label>
+        <input #cabEst type="checkbox" class="formulario__input">
+        <label for="" class="formulario__label">Estabulado</label>
+        <button type="submit" class="formulario__submit" 
+        (click) ="addParticipante(id.value, nombre.value, edad.value, nacion.value, nivel.value, nomCab.value, raza.value, edCab.value, cabEst.value)">
+        Añadir</button>
+    </form>
+    <script src="form.js"></script>
+</body>
